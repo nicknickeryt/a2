@@ -1,6 +1,5 @@
 import math
 from enums import props,reqs
-# TODO check it
 class Walec:
     def __init__(walec):
         walec.height = 0

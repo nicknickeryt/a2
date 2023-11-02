@@ -1,4 +1,3 @@
-import math
 from enums import props,reqs
 
 class Ostroslup:

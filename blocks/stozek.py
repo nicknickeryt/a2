@@ -1,6 +1,5 @@
 import math
 from enums import props,reqs
-# TODO i guess its finished but lets double check that XD
 class Stozek:
     def __init__(stozek):
         stozek.height = 0

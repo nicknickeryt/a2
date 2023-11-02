@@ -1,7 +1,5 @@
 import math
 from enums import props,reqs
-# TODO check it
-# <!> A>B czyli semiaxis > radius!
 class Elipsoida:
     def __init__(elipsoida):
         elipsoida.semiaxis = 0
