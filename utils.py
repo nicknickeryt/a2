@@ -9,6 +9,9 @@ from enum import Enum
 
 from enums import reqs
 
+###############################################################
+# Definicje obietów
+###############################################################
 class blocks(Enum):
     KULA = Kula()
     CZWOROSCIAN = Czworoscian()
@@ -16,7 +19,11 @@ class blocks(Enum):
     STOZEK = Stozek()
     WALEC = Walec()
     ELIPSOIDA = Elipsoida()
-             
+
+###############################################################
+# Wrapper do operacji na obiektach (bryłach)
+#  return: wynik obliczeń
+###############################################################
 def get(block, operation):
     match(operation):
         case reqs.MASS:
@@ -25,7 +32,10 @@ def get(block, operation):
             return block.getVolume()
         case reqs.AREA:
             return block.getArea()
-        
+
+###############################################################
+# Definicje stringów
+###############################################################  
 blockList = [
     ("kula", blocks.KULA), 
     ("czworoscian foremny", blocks.CZWOROSCIAN), 
